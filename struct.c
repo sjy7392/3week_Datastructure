@@ -36,10 +36,21 @@ int main() {
     printf("st3.grade = %c\n", st3.grade); //st3ÀÇ grade Ãâ·Â
     
     /* equality test */
-    /* not working */
-    /*if(st3 == st2) 
+    if(strcmp(st3.grade, st2.grade) == 0){
         printf("equal\n");
-    else
-     printf("not equal\n");*/
+    }
+    else {printf("not equal");}
+        
+    if(st3.studentId == st2.studentId) {
+        printf("equal\n");
+    }
+    else{printf("not equal\n");
+    }
+
+    if(strcmp(st3.lastName, st2.lastName) == 0){
+        printf("equal\n");
+    }
+    else {printf("not equal");}
+
     return 0;
 }
